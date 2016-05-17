@@ -1,3 +1,8 @@
+ /*Need jQuery validations plugin*/
+ //CDN Links
+ <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
+ 
  $.validator.addMethod("dniCheck", function(value, element) {
   if(/^([0-9]{8})*[a-zA-Z]+$/.test(value)){
     var numero = value.substr(0,value.length-1);
